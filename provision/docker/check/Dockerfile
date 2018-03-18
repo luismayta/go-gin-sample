@@ -2,8 +2,11 @@ FROM python:3.6.4-alpine
 
 MAINTAINER Luis Mayta <@slovacus>
 
-LABEL NAME go-gin-sample-check
-LABEL VERSION 0.0.0
+ARG env
+ARG version
+
+LABEL NAME go-gin-sample-check-$env
+LABEL VERSION $version
 
 COPY ./requirements/ /usr/src/requirements/
 COPY ./requirements.txt /usr/src/requirements.txt

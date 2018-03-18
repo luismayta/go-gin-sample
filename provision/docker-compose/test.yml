@@ -7,7 +7,7 @@ version: '3'
 services:
 
   app:
-    image: go-gin-sample-app-test:0.0.0
+    image: go-gin-sample-app-test:0.1.0
     environment: &environment
       - ENVIRONMENT=test
     build:
@@ -15,5 +15,6 @@ services:
       dockerfile: provision/docker/app/Dockerfile
       args:
         env: test
+        version: 0.1.0
     volumes:
       - .:/usr/src

@@ -7,22 +7,23 @@ services:
   app:
     environment: &environment
       - ENVIRONMENT=local
-    image: go-gin-sample-app-dev:0.0.0
+    image: go-gin-sample-app-dev:0.1.0
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
       args:
         env: dev
-        version: 0.0.0
+        version: 0.1.0
 
   check:
-    image: go-gin-sample-check-dev:0.0.0
+    image: go-gin-sample-check-dev:0.1.0
     environment: *environment
     build:
       context: .
       dockerfile: provision/docker/check/Dockerfile
       args:
         env: dev
+        version: 0.1.0
     volumes:
       - .:/go/src/github.com/luismayta/go-gin-sample
     env_file:

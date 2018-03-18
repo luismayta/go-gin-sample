@@ -6,7 +6,7 @@ import (
 
 // Version of project
 var (
-	Version = "0.0.0"
+	Version = "0.1.0"
 )
 
 func getVersion() string {
