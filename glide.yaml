@@ -1,0 +1,18 @@
+package: .
+homepage: https://hadenlabs.com
+license: GNU
+owners:
+- name: Luis Mayta
+  email: slovacus@gmail.com
+  homepage: https://luismayta.github.io
+ignore:
+- appengine
+excludeDirs:
+- node_modules
+- provision
+import:
+- package: github.com/fatih/color
+- package: github.com/gin-gonic/gin
+  version: ^1.2.0
+testImport:
+- package: github.com/arschles/assert
