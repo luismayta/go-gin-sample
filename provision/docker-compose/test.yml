@@ -15,5 +15,6 @@ services:
       dockerfile: provision/docker/app/Dockerfile
       args:
         env: test
+        version: 0.0.0
     volumes:
       - .:/usr/src
