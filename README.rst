@@ -1,6 +1,6 @@
 |license|
 
-:Version: 0.0.0
+:Version: 0.1.0
 :Web: https://github.com/luismayta/go-gin-sample
 :Download: https://github.com/luismayta/go-gin-sample
 :Source: https://github.com/luismayta/go-gin-sample
