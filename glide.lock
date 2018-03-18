@@ -1,0 +1,16 @@
+hash: c9cc22f480752f3784fcdccb8a25f9b36ebb8c0059fef92138e3b33fe74dccc1
+updated: 2018-03-18T15:08:35.401004136Z
+imports:
+- name: github.com/aws/aws-lambda-go
+  version: e0efeda9cfd1e681b596d5284aa057a33b7fa72d
+  subpackages:
+  - lambda
+  - lambda/messages
+  - lambdacontext
+- name: github.com/codegangsta/cli
+  version: 8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff
+- name: gopkg.in/yaml.v2
+  version: 7f97868eec74b32b0982dd158a51a446d1da7eb5
+testImports:
+- name: github.com/arschles/assert
+  version: bb58b908265b5931732079df03f2818bf2167ba0
