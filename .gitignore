@@ -1,8 +1,7 @@
 
-# Created by https://www.gitignore.io/api/go,terraform,python,node,ansible
+# Created by https://www.gitignore.io/api/go,python,node,glide
 
-### Ansible ###
-*.retry
+#!! ERROR: glide is undefined. Use list command to see defined gitignore types !!#
 
 ### Go ###
 # Binaries for programs and plugins
@@ -179,16 +178,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-### Terraform ###
-# Compiled files
-*.tfstate
-*.tfstate.backup
 
-# Module directory
-.terraform/
-
-### Terraform Patch ###
-*.tfvars
-
-# End of https://www.gitignore.io/api/go,terraform,python,node,ansible
-vendor
+# End of https://www.gitignore.io/api/go,python,node,glide
