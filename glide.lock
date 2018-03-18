@@ -1,14 +1,33 @@
-hash: c9cc22f480752f3784fcdccb8a25f9b36ebb8c0059fef92138e3b33fe74dccc1
-updated: 2018-03-18T15:08:35.401004136Z
+hash: 833a8461119c326c494a9951d1922fd7d9e09417b5b2a39c2663e296827637c4
+updated: 2018-03-18T18:13:35.305924539Z
 imports:
-- name: github.com/aws/aws-lambda-go
-  version: e0efeda9cfd1e681b596d5284aa057a33b7fa72d
+- name: github.com/fatih/color
+  version: 507f6050b8568533fb3f5504de8e5205fa62a114
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/gin-gonic/gin
+  version: d459835d2b077e44f7c9b453505ee29881d5d12d
   subpackages:
-  - lambda
-  - lambda/messages
-  - lambdacontext
-- name: github.com/codegangsta/cli
-  version: 8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff
+  - binding
+  - render
+- name: github.com/golang/protobuf
+  version: bbd03ef6da3a115852eaf24c8a1c46aeb39aa175
+  subpackages:
+  - proto
+- name: github.com/mattn/go-colorable
+  version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/ugorji/go
+  version: 02537d3a3e32ef636a53519265d211bd208ca488
+  subpackages:
+  - codec
+- name: golang.org/x/sys
+  version: 2f1e207ee39ff70f3433e49c6eb52677a515e3b5
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
 - name: gopkg.in/yaml.v2
   version: 7f97868eec74b32b0982dd158a51a446d1da7eb5
 testImports:
