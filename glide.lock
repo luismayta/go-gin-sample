@@ -1,5 +1,5 @@
 hash: 833a8461119c326c494a9951d1922fd7d9e09417b5b2a39c2663e296827637c4
-updated: 2018-03-18T18:13:35.305924539Z
+updated: 2018-03-18T20:10:03.159497469Z
 imports:
 - name: github.com/fatih/color
   version: 507f6050b8568533fb3f5504de8e5205fa62a114
@@ -23,7 +23,7 @@ imports:
   subpackages:
   - codec
 - name: golang.org/x/sys
-  version: 2f1e207ee39ff70f3433e49c6eb52677a515e3b5
+  version: 01acb38716e021ed1fc03a602bdb5838e1358c5e
   subpackages:
   - unix
 - name: gopkg.in/go-playground/validator.v8
