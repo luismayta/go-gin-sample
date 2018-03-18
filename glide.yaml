@@ -11,7 +11,7 @@ excludeDirs:
 - node_modules
 - provision
 import:
-- package: gopkg.in/yaml.v2
+- package: github.com/fatih/color
 - package: github.com/gin-gonic/gin
   version: ^1.2.0
 testImport:

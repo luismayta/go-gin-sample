@@ -2,7 +2,7 @@ FROM python:3.6.4-alpine
 
 MAINTAINER Luis Mayta <@slovacus>
 
-LABEL NAME proxy-check
+LABEL NAME go-gin-sample-check
 LABEL VERSION 0.0.0
 
 COPY ./requirements/ /usr/src/requirements/

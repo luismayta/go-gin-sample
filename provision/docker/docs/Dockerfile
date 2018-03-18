@@ -1,7 +1,7 @@
 FROM labpositiva/latex:3.6.1
 MAINTAINER Luis Mayta <@slovacus>
 
-LABEL NAME proxy-latex
+LABEL NAME go-gin-sample-latex
 LABEL VERSION 0.0.0
 
 COPY ./requirements/ /usr/src/requirements/
