@@ -1,0 +1,29 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+
+version: '3'
+services:
+
+  app:
+    environment: &environment
+      - ENVIRONMENT=local
+    image: proxy-app-dev:0.0.0
+    build:
+      context: .
+      dockerfile: provision/docker/app/Dockerfile
+      args:
+        env: dev
+        version: 0.0.0
+
+  check:
+    image: proxy-check-dev:0.0.0
+    environment: *environment
+    build:
+      context: .
+      dockerfile: provision/docker/check/Dockerfile
+      args:
+        env: dev
+    volumes:
+      - .:/go/src/github.com/luismayta/go-gin-sample
+    env_file:
+      - .env
