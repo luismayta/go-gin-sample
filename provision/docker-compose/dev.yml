@@ -7,7 +7,7 @@ services:
   app:
     environment: &environment
       - ENVIRONMENT=local
-    image: proxy-app-dev:0.0.0
+    image: go-gin-sample-app-dev:0.0.0
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
@@ -16,7 +16,7 @@ services:
         version: 0.0.0
 
   check:
-    image: proxy-check-dev:0.0.0
+    image: go-gin-sample-check-dev:0.0.0
     environment: *environment
     build:
       context: .
